@@ -1,0 +1,124 @@
+{% extends 'base.html' %}
+{% block stylesheet %}
+    {% load static %}
+    
+  <style>
+      html {
+        font-size: 14px;
+      }
+      @media (min-width: 768px) {
+        html {
+          font-size: 16px;
+        }
+      }
+      
+      .pricing-header {
+        max-width: 700px;
+      }
+
+      .card-deck .card {
+        min-width: 220px;
+      }
+
+      main > .container {
+        padding: 15px 15px 0;
+      }
+      
+      .footer {
+        background-color: #f5f5f5;
+      }
+      
+      .footer > .container {
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+      
+      code {
+        font-size: 100%;
+      }
+
+      .indent {
+        margin-left: 2%;
+      }
+  </style>
+  
+{% endblock %}
+
+
+{% block content %}
+
+<div class="container">
+
+  <div class="pricing-header px-2 py-2 pt-md-4 pb-md-3 mx-auto text-center">
+    <h1 class="display-5">5G in a Backpack</h1>
+    <h1 class="display-5">Explore, Run, Analyze</h1>
+    <p class="lead">Quickly <code>explore</code>, <code>configure</code> and <code>run</code> 5G SA Network Functions and learn 5G concept with real example of traces.</p>
+  </div>
+
+  <div class="">
+    <div class="card-deck mb-3 text-center">
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal">Topology</h4>
+        </div>
+        <div class="card-body">
+            <div class="list-unstyled mt-3 mb-4">
+              <p>Check 5G SA topology, interfaces, nodes and configure NF in 5G. Also run different scenarios with your desired parameters.</p>
+            </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal">Traces</h4>
+        </div>
+        <div class="card-body">
+          <div class="list-unstyled mt-3 mb-4">
+            <p>Check out pcap traces and investigate different protocols such as NGAP, PFCP and http. Find out parameters in web based Jsonify format and learn 5G in fully interactive method.</p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal">Analyzer</h4>
+        </div>
+        <div class="card-body">
+          <div class="list-unstyled mt-3 mb-4">
+            <p>Check out hexout 5G protocol analyzer, configure 5G sequence diagram which match your requirement. With analyzer you can run specific scenarios such as security. define new scenarios and use them later.</p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal">Docs</h4>
+        </div>
+        <div class="card-body">
+          <div class="list-unstyled mt-3 mb-4">
+            <p>Tools documentation which ease using this tools. also includes 5G parameters and descriptions to be used in self study cases.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<footer class="footer mt-auto py-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-2">
+        <small class="d-block mb-3 text-muted">&copy; 2020-2022</small>
+      </div>
+      <div class="col-sm-10">
+        <p>Hexout Stockholm AB. visit at <a href="https://www.hexout.se/">hexout.se</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+{% endblock %}
