@@ -85,13 +85,15 @@ def JsonWrapperData(data):
             yield element
 
     elif isinstance(data, list):
-        
         for item in data:
-            k = item.get('json.key')
-            eleList = {}
-            for z in JsonWrapperData(item):
-                eleList.update(z)
-            yield eleList
+            if isinstance(item,str):
+                yield {'value': item}
+            else:
+                k = item.get('json.key')
+                eleList = {}
+                for z in JsonWrapperData(item):
+                    eleList.update(z)
+                yield eleList
 
 
 
