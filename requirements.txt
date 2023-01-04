@@ -4,7 +4,7 @@ djangorestframework==3.12.2
 lxml==4.6.1
 py==1.9.0
 pymongo==3.11.0
-pyshark==0.4.2.11
+pyshark==0.5.3
 pytz==2020.4
 PyYAML==5.3.1
 ruamel.yaml==0.16.12       
