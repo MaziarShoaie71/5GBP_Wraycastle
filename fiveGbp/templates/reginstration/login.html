@@ -36,7 +36,7 @@
     <form class="form-signin" action="{% url 'login' %}" method="POST">
       {% csrf_token %}
       <img class="mb-4" src="{% static 'reginstration/signinlogo.png' %}" alt="" width="222" height="129">
-      <h1 class="h3 mb-3 font-weight-normal">Hexout 5G In a Backpack</h1>
+      <h1 class="h3 mb-3 font-weight-normal">5G In a Backpack</h1>
       <h3 class="h6 mb-3 font-weight-normal">Please sign in</h3>
 
       <label for="{{ form.username.id_for_label }}" class="sr-only">Username</label>
