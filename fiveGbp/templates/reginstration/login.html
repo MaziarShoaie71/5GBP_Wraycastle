@@ -35,7 +35,7 @@
     <form class="form-signin" action="{% url 'login' %}" method="POST">
       {% csrf_token %}
       <img class="mb-4" src="{% static 'reginstration/WCL_Logo.png' %}" alt="" width="350" height="60">
-      <h1 class="h3 mb-3 font-weight-normal">Wray Castle 5G Lab and Workshop</h1>
+      <h1 class="h3 mb-3 font-weight-normal">5G Lab and Workshop</h1>
       <h3 class="h6 mb-3 font-weight-normal">Please sign in</h3>
 
       <label for="{{ form.username.id_for_label }}" class="sr-only">Username</label>
